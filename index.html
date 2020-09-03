@@ -7,12 +7,14 @@
             <script>
             CY.loader()
             .addModule(CY.modules().FACE_DETECTOR.name)
+            .addModule(CY.modules().FACE_AGE.name, {})
             .load()
             .then(({ start, stop }) => start());
             
-            window.addEventListener(CY.modules().FACE_DETECTOR.eventName, (evt) => {
-                //console.log('Face detector result', evt.detail);
-            })
+            //window.addEventListener(CY.modules().FACE_DETECTOR.eventName, (evt) => {})
+            window.addEventListener(CY.modules().FACE_AGE.eventName, (evt) => {
+                console.log('Age result', evt.detail);
+            });
             </script>
         </body>
         
