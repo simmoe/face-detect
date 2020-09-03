@@ -1,8 +1,7 @@
 <!DOCTYPE html>
     <head>
-        ...
-           <meta name="mphtools-feature" content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck">
-        </head>
+           <meta name="mphtools-feature" content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck" />
+    </head>
         <body>
             <script src="https://ai-sdk.morphcast.com/v1.14/ai-sdk.js"></script>
             <script>
@@ -12,8 +11,8 @@
             .then(({ start, stop }) => start());
             
             window.addEventListener(CY.modules().FACE_DETECTOR.eventName, (evt) => {
-            console.log('Face detector result', evt.detail);
-            });
+                //console.log('Face detector result', evt.detail);
+            })
             </script>
         </body>
         
